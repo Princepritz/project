@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: antiquewhite;
+    }
+</style>
+<body>
+    <div class="container">
+        <div id="main" class="card card-body">
+         <h2 class="title">Book Appointment</h2>
+         <form id="addForm" class="form-inline mb-3">
+            <label for="amount">Choose Expenseamount</label>
+           <input type="text"  id="amount">
+           <label for="Des">Choose Description</label>
+           <input type="text" id="Des">
+           <label for="cat">Choose Category</label>
+      <select name="catagory" id="cat">
+        <option value="Fuel">Fuel</option>
+        <option value="Fun">Fun </option>
+        <option value="Electric">Electric </option>
+        <option value="Shoping">Shoping</option>
+        <option value="Travel">Travel</option>
+        <option value="Food">Food</option>
+      </select>
+           <input type="submit" class="btn btn-dark" value="Add Expense">
+         </form>
+         <ul id="items" class="list-group"></ul>
+        </div>
+       </div>
+       <script src="expensetracker.js"></script>
+</body>
+</html>
